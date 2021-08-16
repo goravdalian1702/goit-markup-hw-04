@@ -138,13 +138,28 @@ h1, h2, h3, h4, h5, h6, p, ul{
     letter-spacing: 0.02em;
 }
 
+.auth-nav .icon{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    
+
+}
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--accent-color);
 }
 
 .hero{
-
+    max-width: 1600px;
+    height: 600px;
+    background-image: url(../images/Ovelay.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--hero-color);
     text-align: center;
     padding-top: 200px;
@@ -216,13 +231,31 @@ h1, h2, h3, h4, h5, h6, p, ul{
 
 }
 
+
+.feature-list .icon{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+}
+
 .feature-list .iteam:last-child{
     margin-right: 0;
 }
 
-.feature-list .iteam{
-    margin-right: 30px;
-    width: 270px;
+
+.feature-list .icon{
+    display: block;
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#F5F4FA;
+}
+
+.feature-list .iteam .icon .link{
+    width: 70px;
+    height: 70px;
 }
 
 .feature-list .title{
@@ -295,6 +328,34 @@ h1, h2, h3, h4, h5, h6, p, ul{
     
 }
 
+.icon-worker{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.icon-worker .iteam{
+    margin-right: 10px;
+    margin-top: 16px;
+    
+}
+
+.icon-worker .iteam:last-child{
+    margin-right: 0;
+}
+
+.icon-worker .icon{
+    width: 44px;
+    height: 44px;
+    
+
+}
+
+.icon-worker .iteam:hover{
+    color: #2196F3;;
+}
+
 .worker-list .text{
     color: var(--primery-text-color);  
     font-size: 16px;
@@ -305,6 +366,35 @@ h1, h2, h3, h4, h5, h6, p, ul{
 .feature-list, .work-list, .worker-list{
     list-style: none;
 }
+
+.actions-client-list{
+    list-style: none;
+}
+
+.actions-client-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.actions-client-list .iteam-client{
+    margin-right: 30px; 
+}
+
+
+
+.actions-client-list .iteam-client:nth-last-child(){
+    margin-right: 0;
+}
+
+.iteam-client .link-icon{
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+}
+
 
 .footer{
     padding: 60px 0;
@@ -338,6 +428,18 @@ h1, h2, h3, h4, h5, h6, p, ul{
 .foot-nav .basement .address:hover,
 .foot-nav .basement .address:focus{
     color: var(--accent-color);
+}
+
+.footer .list-link{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footer .title{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .basement .iteam{
@@ -419,6 +521,11 @@ h1, h2, h3, h4, h5, h6, p, ul{
     margin-bottom: 30px;
     border: 1px solid #EEEEEE;
     flex-basis: calc(100% / 3 - 30px);
+    
+}
+
+.block-list .block:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .block-list .link{
