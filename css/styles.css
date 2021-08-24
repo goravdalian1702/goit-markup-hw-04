@@ -339,19 +339,51 @@ h1, h2, h3, h4, h5, h6, p, ul{
     
 }
 
-.icon-worker .link-worker{
+
+.icon-worker{
     display: flex;
     align-items: center;
     justify-content: center;
+    list-style: none;
+    margin-top: 16px;
+
 }
 
+.icon-worker .iteam{
+    margin-right: 10px;
+    
+}
 
+.icon-worker .iteam:last-child{
+    margin-right: 0;
+}
 
-.link-worker .icon{
-    color: #AFB1B8;
-    border-radius: 50%;
+.icon-worker .iteam .icon{
     width: 20px;
     height: 20px;
+    fill:  #AFB1B8;;
+}
+
+.icon-worker .link-worker{
+    display: flex;
+    padding: 0;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon-worker .link-worker:hover{
+    
+    background-color: var(--accent-color);
+    
+}
+
+.icon-worker .icon:hover{
+    fill: #FFFFFF;
 }
 
 .worker-list .text{
@@ -387,9 +419,11 @@ h1, h2, h3, h4, h5, h6, p, ul{
     align-items: center;
     justify-content: center;
     border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
     border-radius: 4px;
     width: 170px;
     height: 92px;
+    cursor: pointer;
 }
 
 
@@ -397,17 +431,9 @@ h1, h2, h3, h4, h5, h6, p, ul{
     margin-right: 0;
 }
 
-.actions-client-list:hover{
-    fill: var(--accent-color);
-    
-}
-
-.actions-client-list .link:hover .icon{
-    fill: currentColor;
-}
-
-.actions-client-list .icon{
-    fill: currentColor;
+.actions-client-list .link:hover{
+    fill: #2196F3; 
+    border: 1px solid #2196F3;
 }
 
 
@@ -595,6 +621,7 @@ img{
 .list-link{
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style: none;
 }
 
@@ -613,21 +640,24 @@ img{
 }
 
 .list-link .link-icons{
+    display: flex;
     padding: 0;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .list-link .link-icons:hover{
-    color: blue;
-    border-radius: 50%;
+    background-color: var(--accent-color);
+    
 }
 
 .list-link .icon{
-    width: 44px;
-    height: 44px;
-    fill: currentColor;
-
+    
+    fill: #FFFFFF;
 }
 
