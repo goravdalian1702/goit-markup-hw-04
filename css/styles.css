@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6, p, ul{
 .head{
     
     background-color: var(--background-color);
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-conteiner{
@@ -517,8 +518,8 @@ h1, h2, h3, h4, h5, h6, p, ul{
     margin-left: 8px;
 }
 
-.button-list .iteam:last-child{
-    margin-left: 8px;
+.button-list .iteam:first-child{
+    margin-left: 0;
 }
 
 .button-list .second-button{
