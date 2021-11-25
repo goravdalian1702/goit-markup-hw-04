@@ -160,6 +160,7 @@ h1, h2, h3, h4, h5, h6, p, ul{
     max-width: 1600px;
     height: 600px;
     background-image: url(../images/Ovelay.png);
+    background-color: linear-gradient(rgba(47, 48, 58, 0.4));
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -380,12 +381,13 @@ h1, h2, h3, h4, h5, h6, p, ul{
 .icon-worker .link-worker:hover{
     
     background-color: var(--accent-color);
-    
+    border-radius: 50%;
 }
 
-.icon-worker .icon:hover{
+.icon-worker .link-worker:hover .icon{
     fill: #FFFFFF;
 }
+
 
 .worker-list .text{
     color: var(--primery-text-color);  
@@ -405,7 +407,7 @@ h1, h2, h3, h4, h5, h6, p, ul{
 .actions-client-list{
     display: flex;
     align-items: center;
-    justify-content: center;
+    
     
 }
 
@@ -413,6 +415,10 @@ h1, h2, h3, h4, h5, h6, p, ul{
     display: flex;
     align-items: center;
     margin-right: 30px; 
+}
+
+.actions-client-list .iteam-client:last-child{
+    margin-right: 0;
 }
 
 .actions-client-list .link{
@@ -559,12 +565,24 @@ h1, h2, h3, h4, h5, h6, p, ul{
     
 }
 
-.block-list .block:hover{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
+
 
 .block-list .link{
+    display: block;
     text-decoration: none;
+}
+
+.block-list .link:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+
+
+.block-list .link:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 img{
@@ -602,12 +620,12 @@ img{
 
 .footer-conteiner{
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
 }
 
 .iteam-icons{
     
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .iteam-icons:last-child{
@@ -615,7 +633,7 @@ img{
 }
 
 .socials-wrapper{
-    padding-top: 15px;
+    
     margin-left: 70px;
 }
 
