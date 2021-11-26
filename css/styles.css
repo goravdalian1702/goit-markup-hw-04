@@ -159,8 +159,9 @@ h1, h2, h3, h4, h5, h6, p, ul{
 .hero{
     max-width: 1600px;
     height: 600px;
-    background-image: url(../images/Ovelay.png);
-    background-color: linear-gradient(rgba(47, 48, 58, 0.4));
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url(../images/Ovelay.png);
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -546,6 +547,7 @@ h1, h2, h3, h4, h5, h6, p, ul{
 .button-list .second-button:focus{
     background-color: var(--accent-color);
     color: var(--background-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -580,7 +582,7 @@ h1, h2, h3, h4, h5, h6, p, ul{
 
 
 
-.block-list .link:hover{
+.block-list .link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
